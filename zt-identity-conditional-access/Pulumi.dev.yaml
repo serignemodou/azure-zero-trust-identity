@@ -1,0 +1,36 @@
+config:
+  azuread:tenantID: 3849413e-f965-4489-acd3-548081fbce0b
+
+  iam:groupEligbleOwner: #Will be assign to azure RBAC Owner role in the dev subscription
+    name: gr-team-beapp-owner
+    owners:
+      - o1modoudjuff@gmail.com
+      - o2modoudjuff@gmail.com
+      - o3modoudjuff@gmail.com
+    members:
+      - s1modoudjuff@gmail.com
+      - s2modoudjuff@gmail.com
+
+  
+  iam:groupEligibleContributor: #Will be assign to azure RBAC Contributor role in the dev subscription
+    name: gr-team-beapp-contributor
+    owners:
+      - serigne@gmail.com
+      - modoudjuff@gmail.com
+    members:
+      - smodou.diouf@gmail.com
+
+  iam:groupEligbeReader: #Will be assign to azure RBAC Reader role in the dev subscription
+    name: gr-team-beapp-reader
+    owners:
+      - modoudjuff@gmail.com
+    members:
+      - mdioum@gmail.com
+      
+  iam:groupCostManagementReader:
+    name: gr-team-beapp-cost-management #Will be assign to azure RBAC Cost Management role in the dev subscription
+    owners: 
+      - ms@gmail.com
+      - ab@gmail.com
+    members:
+      - az@gmail.com

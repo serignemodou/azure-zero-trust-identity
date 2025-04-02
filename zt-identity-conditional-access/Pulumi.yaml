@@ -1,0 +1,6 @@
+name: zt-identity-conditional-access
+runtime: nodejs
+description: Azure Identity Zero Trust
+config:
+  project:url:
+      value: github.com:serignemodou/azure-zero-trust-identity
