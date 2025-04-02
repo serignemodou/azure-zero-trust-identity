@@ -21,5 +21,6 @@ const adGroups = Object.values(groupsParams).map(group =>
         displayName: `group.name-${env}`,
         owners: group.owners,
         members: group.members,
+        securityEnabled: true,
     })
 )
