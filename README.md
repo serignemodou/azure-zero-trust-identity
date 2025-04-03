@@ -55,7 +55,7 @@ NB: Microsoft Azure, recommande d'utiliser MFA avec accès conditionnel.
 
 3. [App-Authenticator](https://support.microsoft.com/fr-fr/account-billing/comment-ajouter-vos-comptes-%C3%A0-microsoft-authenticator-92544b53-7706-4581-a142-30344a2a2a57) Configure Microsoft Authenticator pour le MFA
 
-#### Conditional Access
+#### Conditionnal Access
 #### Device Compliance
 #### Identiy Governance
 PIM et Access reviews sont les deux principales fonctionnalités de la gouvernance des identités.
@@ -69,3 +69,12 @@ PIM et Access reviews sont les deux principales fonctionnalités de la gouvernan
 - Assigner le role à un utilisateur
 ![pim6](images/PIM6.png)
 ![pim7](images/PIM7.png)
+
+
+Tutorial:
+1. Creer un group utilisateur
+2. Ajouter des membres
+3. Configurer conditional access policy
+4. Assigner la condition à ce group
+5. Associer le cloud app qui déclenche le group
+6. Definir un control qui autorise l'acces à cette application cloud app necesitant du MFA 

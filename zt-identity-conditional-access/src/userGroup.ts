@@ -1,5 +1,6 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as azuread from "@pulumi/azuread";
+//import { GroupCreate } from "@iam-beapp/pulumi-own-library";
 
 import {env} from './common'
 
@@ -15,6 +16,7 @@ const groupsParams : Record<string, GroupsParams> = {
     groupEligibleReaderParams : new pulumi.Config('iam').requireObject<GroupsParams>('groupEligbeReader'),
     groupEligibleCostMgtParams : new pulumi.Config('iam').requireObject<GroupsParams>('groupCostManagementReader'),
 }
+
 
 const adGroups = Object.values(groupsParams).map(group => 
     new azuread.Group(`group.name-${env}`, {
